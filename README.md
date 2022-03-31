@@ -1,2 +1,2 @@
 # AndroidUnitTestingSample
-Our test will passed
+Our test will pass here
