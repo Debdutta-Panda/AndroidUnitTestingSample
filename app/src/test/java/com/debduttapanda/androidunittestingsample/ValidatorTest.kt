@@ -15,4 +15,12 @@ class ValidatorTest{
         val result = Validator.validateInput(amount, description)
         assertThat(result).isEqualTo(true)
     }
+
+    @Test
+    fun whenInputIsInvalid(){
+        val amount = 0
+        val description = "0"
+        val result = Validator.validateInput(amount, description)
+        assertThat(result).isEqualTo(false)
+    }
 }
